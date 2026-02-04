@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About</title>
+  <link rel="stylesheet" href="style.css">
+   <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #2c3e50;
+      padding: 15px 50px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .navbar h2 {
+      color: #fff;
+      margin: 0;
+      font-size: 28px;
+    }
+
+    .navbar div a:hover {
+      color: #e67e22;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('hotel.jpg') center/cover no-repeat;
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top:0; left:0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.4);
+    }
+
+    .hero h1, .hero p {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h1 {
+      font-size: 50px;
+      margin: 0;
+    }
+
+    .hero p {
+      font-size: 22px;
+      margin-top: 10px;
+    }
+
+    /* Section */
+    .section {
+      padding: 60px 50px;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 36px;
+      margin-bottom: 40px;
+      color: #2c3e50;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      margin: 15px 0;
+      color: #2c3e50;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <h2>GOLDEN Hotel</h2>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="rooms.html">Rooms</a>
+    <a href="booking.html">Booking</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<section class="section">
+  <h2>Customer Feedback</h2>
+  <div class="feedback-grid">
+    <div class="feedback-card">
+      <img src="AYAN.jpeg" alt="Customer 1">
+      <h4>AYAN ISMAIL</h4>
+      <p>⭐ Very clean rooms
+        The rooms were clean, comfortable, and well-maintained.
+
+The food at the restaurant was delicious and had a good variety.
+      </p>
+    </div>
+    <div class="feedback-card">
+      <img src="pic2.jpg" alt="Customer 2">
+      <h4>Fatima Yusuf</h4>
+      <p>⭐ Friendly staff
+        The staff deserve praise and appreciation for their service.
+        The staff were friendly and very helpful.
+      </p>
+    </div>
+    <div class="feedback-card">
+      <img src="pic nag.jpg" alt="Customer 3">
+      <h4>ANSAL Mohamed</h4>
+      <p>⭐ Affordable prices
+        Facilities like the swimming pool and gym were clean and enjoyable.
+        I had a pleasant and comfortable stay.
+
+I would recommend this hotel to others and would love to stay again
+      </p>
+    </div>
+  </div>
+</section>
+
+<style>
+.feedback-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.feedback-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+}
+
+.feedback-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.feedback-card h4 {
+  margin: 5px 0;
+  color: #2c3e50;
+}
+
+.feedback-card p {
+  font-size: 14px;
+  color: #555;
+}
+</style>
+<h2>GOLDEN hotel established</h2>
+<p>Golden Hotel was established in 2023 with the aim of providing high-quality hospitality and comfortable accommodation for travelers and visitors. Since its establishment, the hotel has been committed to delivering excellent service and ensuring customer satisfaction.
+
+The hotel is strategically located in Mogadishu, Somalia, near Aden Adde International Airport, making it a convenient choice for both local and international guests. Its prime location allows easy access to major transportation routes and key areas of the city.
+
+With its modern facilities, professional staff, and peaceful environment, Golden Hotel continues to serve as a reliable destination for business travelers, tourists, and families seeking comfort and convenience in Mogadishu.</p>
+<section class="section">
+  <h2>Our special emergency places</h2>
+
+  <div class="grid">
+    <div class="card">
+      <img src="doctor.jpg">
+      <h3>special doctor that you can meet anytime</h3>
+      
+    </div>
+
+    <div class="card">
+      <img src="pharmacy.jpg">
+      <h3>tou can get any medicine that doctor wrote.</h3>
+     
+    </div>
+       <div class="card">
+      <img src="hospital.jpg">
+      <h3>emergency place</h3>
+     
+  
+  </div>
+</section>
+<section class="section">
+  <h2>Our special turkish food</h2>
+
+  <div class="grid">
+    <div class="card">
+      <img src="gorba.jpg">
+      <h3>gorba recipe</h3>
+      
+    </div>
+
+    <div class="card">
+      <img src="Turkish Pide.jpg">
+      <h3>turkish pide</h3>
+     
+    </div>
+       <div class="card">
+      <img src="Lahmacun Recipe.jpg">
+      <h3>lahmacun recipe</h3>
+     
+    </div>
+       <div class="card">
+      <img src="iclikofte.jpg">
+      <h3>iclikofte recipe</h3>
+     
+    </div>
+  </div>
+</section>
+
+
+</body>
+</html>

@@ -1,0 +1,197 @@
+
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #f4f4f4;
+}
+
+.navbar {
+  background: #000;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.hero {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 60px;
+}
+
+.section {
+  padding: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px gray;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+button {
+  background: black;
+  color: white;
+  border: none;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+}
+button {
+  background: linear-gradient(135deg, #d4af37, #f5e6a1);
+  border: none;
+  padding: 12px;
+  border-radius: 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(212,175,55,0.1);
+  transition: 0.5s;
+}
+
+.card:hover::after {
+  left: 0;
+}
+* {
+  transition: all 0.3s ease;
+}
+
+.section {
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.hero {
+  background: 
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("images/room2.png");
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: var(--gold);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+:root{
+  --dark:#0b1c2d;
+  --gold:#3fa9f5;
+}
+:root{
+  --dark:#0b1c2d;
+  --gold:#3fa9f5;
+}
+:root{
+  --dark:#120015;
+  --gold:#b26cff;
+}
+.hero{
+  background:
+    linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url("../images/room2.png");
+}
+
+
+.hero h1 {
+  color: #d4af37;
+  font-size: 3rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+} 
+.card img {
+  width: 100%;
+  height: 220px;      
+  object-fit: cover; 
+  display: block;
+}
+h2{
+  text-align: center;
+}
